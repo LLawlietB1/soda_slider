@@ -29,7 +29,27 @@
 .item .fruit {
     width: 90%;
     position: absolute;
-    top: 10%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 3;
+}
+
+.item .fruit_new1 {
+    width: 50%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 3;
+}
+
+.item .fruit_new2 {
+    width: 70%;
+    position: absolute;
+    top: 48%;
+    left: 50%;
+    transform: translate(-50%, -50%);
     z-index: 3;
 }
 
@@ -76,8 +96,13 @@
 
 .item.active img.fruit {
     animation: toActive 0.5s ease-in-out 1;
+    
+}
+.item.active img.can {
+    animation: toActive 0.6s ease-in-out 1;
+    
 }
 
 .item.active .title {
-    animation: toActive 0.5s ease-in-out 1;
+    animation: toActive 0.7s ease-in-out 1;
 }
